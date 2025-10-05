@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+    /* 1. Global/Body Font (Inter) */
+    body, .navbar-nav, .nav-link, .form-control, .btn {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* 2. Headline/Logo Font (Bangers) - Use for the brand's look */
+    .navbar-brand,
+    .carousel-caption h1 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        /* Optional: Add a subtle neon text color/shadow */
+        color: #FF10F0; /* Neon Pink */
+        text-shadow: 1px 1px 5px rgba(255, 16, 240, 0.6);
+    }
+    
+    /* 3. Carousel Body Text - Make it bold and readable */
+    .carousel-caption p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+    }
+    </style>
     <title></title>
 </head>
 <body>
 <!-- Header -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
         <div class="container-fluid">
-        <a class="navbar-brand text-" href="#">The Archive</a>
+        <a class="navbar-brand text-" href="#">RE-WOUND</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,6 +42,9 @@
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About Us</a>
@@ -38,7 +65,7 @@
         </div>
     </nav>
 <!-- Carousel -->
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="margin: 20px;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -50,9 +77,9 @@
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>TRUE TO THE CUT</h1>
+            <p>We skipped fast-fashion and went straight back to the source. Authentic, heavy-weight cotton and 90s boxy fits, re-engineered for today's street.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Shop the drop</a></p>
           </div>
         </div>
       </div>
@@ -60,9 +87,9 @@
         <img src="images/streetwear.jpg" alt="" height="500" width="100%">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <h1>BORN FROM GRIT</h1>
+            <p>Every piece is garment-dyed and distressed to look like you've been rocking it since '92. Built tough, fade ready.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">View the lookbook</a></p>
           </div>
         </div>
       </div>
@@ -70,9 +97,9 @@
         <img src="images/download.webp" height="500" width="100%">
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>RE-WOUND. RE-UP.</h1>
+            <p>Limited edition drops only. Don't wait for the restock—these styles rewind fast.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Start styling now</a></p>
           </div>
         </div>
       </div>
@@ -86,6 +113,31 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <!-- Products -->
+  <div class="container bg-dark">
+    <div class="row text-center mb-5">
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/graffiti.webp" role="img" alt="The Graffiti Tee">
+            <h3 class="mt-3">The Graffiti Tee</h3>
+            <p>Oversized fit, hand-splattered print. Heavy-weight cotton built to last.</p>
+            <p><a class="btn btn-sm btn-outline-light" href="#">View Tee &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/bomber.webp" role="img" alt="The Bomber Jacket">
+            <h3 class="mt-3">The Bomber Jacket</h3>
+            <p>Acid-wash denim, reversible paisley lining. Bold color-blocking meets durability.</p>
+            <p><a class="btn btn-sm btn-outline-light" href="#">View Jacket &raquo;</a></p>
+        </div><div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/skater.webp" role="img" alt="The Skater Beanie">
+            <h3 class="mt-3">The Skater Beanie</h3>
+            <p>Ribbed knit, stitched-on vintage patch. The essential cold-weather street piece.</p>
+            <p><a class="btn btn-sm btn-outline-light" href="#">View Beanie &raquo;</a></p>
+        </div>
+    
+    <div class="text-center mb-5">
+        <a class="btn btn-lg btn-outline-light" href="#">SEE ALL STYLES</a>
+    </div>
+</div>
       <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
