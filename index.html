@@ -4,66 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-    /* 1. Global/Body Font (Inter) */
-    body, .navbar-nav, .nav-link, .form-control, .btn {
-        font-family: 'Inter', sans-serif;
-    }
-
-    /* 2. Headline/Logo Font (Bangers) - Use for the brand's look */
-    .navbar-brand,
-    .carousel-caption h1 {
-        font-family: 'Bangers', cursive;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        /* Optional: Add a subtle neon text color/shadow */
-        color: #FF10F0; /* Neon Pink */
-        text-shadow: 1px 1px 5px rgba(255, 16, 240, 0.6);
-    }
-    
-    /* 3. Carousel Body Text - Make it bold and readable */
-    .carousel-caption p {
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-    }
-    </style>
-    <title></title>
+    <title>RE-wound - Fashion Store</title>
 </head>
 <body>
-<!-- Header -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-        <div class="container-fluid">
-        <a class="navbar-brand text-" href="#">RE-WOUND</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Navigation Header -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Main navigation">
+    <div class="container-fluid">
+        <!-- Store Brand Name -->
+        <a class="navbar-brand fw-bold" href="index.html">Re-wound</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCategories">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarsExample04">
+        
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarCategories">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown04">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li>
+                <!-- Home Link -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <!-- Men's Category -->
+                <li class="nav-item">
+                    <a class="nav-link" href="men.html">Men</a>
+                </li>
+                <!-- Women's Category -->
+                <li class="nav-item">
+                    <a class="nav-link" href="women.html">Women</a>
+                </li>
+                <!-- Kids Category -->
+                <li class="nav-item">
+                    <a class="nav-link" href="kids.html">Kids</a>
+                </li>
+                <!-- Shoes Category -->
+                <li class="nav-item">
+                    <a class="nav-link" href="shoes.html">Shoes</a>
+                </li>
+                <!-- Sale Category - Highlighted -->
+                <li class="nav-item">
+                    <a class="nav-link text-danger fw-bold" href="sale.html">SALE</a>
+                </li>
             </ul>
-            <form>
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            
+            <!-- Search Form -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
         </div>
-        </div>
-    </nav>
+    </div>
+</nav>
+
 <!-- Carousel -->
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="margin: 20px;">
     <div class="carousel-indicators">
@@ -113,7 +105,40 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!-- Products -->
+
+<!-- Featured Categories -->
+<section class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card border-0">
+                <img src="images/pexels-davidgomes-2479830.jpg" class="card-img-top" alt="Men's Fashion" height="600">
+                <div class="card-body">
+                    <h5 class="card-title">Men</h5>
+                    <a href="men.html" class="btn btn-outline-dark">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0">
+                <img src="images/women.jpg" class="card-img-top" alt="Women's Fashion" height="600">
+                <div class="card-body">
+                    <h5 class="card-title">Women</h5>
+                    <a href="women.html" class="btn btn-outline-dark">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card border-0">
+                <img src="images/sale.jpg" class="card-img-top" alt="Sale Items">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">SALES UP TO 50% OFF</h5>
+                    <a href="sale.html" class="btn btn-danger">Shop Sale</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Products -->
   <div class="container marketing">
     <h2 class="section-title text-center my-5">THE DEBUT COLLECTION</h2>
     
@@ -142,8 +167,55 @@
     <div class="text-center mb-5">
         <a class="btn btn-lg btn-outline-light" href="#">SEE ALL STYLES</a>
     </div>
-</div>
-      <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
+<!-- New Arrivals -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">New Arrivals</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card product-card">
+                    <img src="images/bomber.webp" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h6 class="card-title">Bomber Jacket</h6>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Re-wound</h5>
+                <p>Your favorite fashion destination</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="about.html" class="text-white">About Us</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Info</h5>
+                <p>Email: info@rewound.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
